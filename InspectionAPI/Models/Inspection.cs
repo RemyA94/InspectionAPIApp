@@ -13,8 +13,8 @@ namespace InspectionAPI.Models
         [StringLength(200)]
         public string Comments { get; set; } = string.Empty;
 
-        public int InspectionTypeId { get; set; }
+        public int InspectionTypeId { get; set; } //FK_InspectionType_ID
 
-        public InspectionType? InspectionType { get; set; }
+        public InspectionType? InspectionType { get; set; } //Navegations_Property for //FK_InspectionType_ID in EFCore
     }
 }
